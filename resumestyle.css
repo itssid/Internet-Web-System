@@ -1,0 +1,6 @@
+body {background-color:rgb(242, 242, 242); background-image:url("snu_logo.jpeg");background-repeat:no-repeat;background-position:right top;}
+h1 {}
+h2 {font-family:"Times New Roman"; font-style:italic;color:rgb(0, 153, 255);}
+h3 {}
+p {font-weight: bold;}
+table {background-color:rgb(102, 204, 255);color:rgb(102, 0, 102);border-width:2px;}
