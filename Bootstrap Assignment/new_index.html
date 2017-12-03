@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Movie Store</title>
+    <!-- Bootstrap -->
+    
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+    body {
+        background: linear-gradient(to bottom right, darkviolet, red, pink);
+      }
+
+      .nav-tabs > li.active > a {
+  color: darkblue;
+  font-size: 18px;
+}
+.nav-tabs > li > a {
+  color: blue;
+}
+.nav-navbar > li.active > a {
+  color: white;
+  font-size: 18px;
+}
+.nav-navbar > li > a {
+  color: black;
+}
+
+  </style>
+
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <ul class="nav nav-navbar">
+            <li class="navbar-brand">Movie Store</li>
+            <li class="pull-right"><a data-toggle="modal" href="#cart" data-target="#cart_modal"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li> 
+    <li class="pull-right"><a data-toggle="modal" href="#category" data-target="#addcategory"><span class="glyphicon glyphicon-plus"></span> Add Category</a></li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container" style = "margin-top: -10px">  
+    <div class="jumbotron" style="background-color:darkviolet;text-align:center;margin-top: -40px">  
+          <h1><img src="logo.png"/></h1>   
+    <nav> 
+
+    <div class="container">    
+    <ul id="category_list" class="nav nav-tabs" style="background-color:rgb(237, 30, 213);">  
+    <li class="active"><a data-toggle="tab" href="#action">Action</a></li>  
+    <li><a data-toggle="tab" href="#animated">Animated</a></li>  
+    <li><a data-toggle="tab" href="#biography">Biography</a></li>  
+    <li><a data-toggle="tab" href="#comedy">Comedy</a></li>
+    <li><a data-toggle="tab" href="#horror">Horror</a></li>  
+  </ul>  
+  </div>
+  </nav>
+  </div>
+  </div>
+  </header>  
+  <div class="tab-content" id="add_movies">
+
+    <div id="action" class="tab-pane fade in active">
+      <div class="row">
+
+    <div class="col-md-4">
+      <img class="img-thumbnail" src="action/AntMan_poster.jpeg" height="300" width="200" style="margin-left:20px;"><div style="padding-top:10px;padding-left:60px;">
+        <button data-html="true" name="Ant Man" value="300" type="button" class="btn btn-info" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>:Con artist Scott gains the ability to shrink in scale with the help of a futuristic suit. Now he must rise to the occasion of his superhero status and protect his secret from unsavoury elements<br /><em>Price</em>:Rs300">Ant Man</button>
+    </div>
+  </div>
+
+    <div class="col-md-4">
+      <img class="img-thumbnail" src="action/IronMan_poster.jpeg" height="300" width="200">
+      <div style="padding-top:10px;padding-left:60px;">
+        <button data-html="true" type="button" name="Iron Man" value="300" class="btn btn-info" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: When an industrialist is captured, he constructs a high-tech armoured suit to escape. Once he manages to escape, he decides to use his suit to fight against evil forces and save the world.<br /><em> Price</em>: Rs 300">Iron Man</button>
+    </div>
+    </div>
+
+  <div class="col-md-4">
+    <img class="img-thumbnail" src="action/IronMan2_poster.jpeg" height="300" width="200">
+    <div style="padding-top:10px;padding-left:60px;">
+      <button data-html="true" type="button" class="btn btn-info" name="Iron Man 2" value="300" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: Tony Stark is under pressure from various sources, including the government, to share his technology with the world. He must find a way to fight them while also tackling his other enemies.<br /><em>Price</em>: Rs 300">Iron Man 2</button>
+    </div>
+  </div>
+  
+  </div>
+  <br />
+  <br />
+
+  <div class="row">
+
+    <div class="col-md-4 ">
+      <img class="img-thumbnail" src="action/JuarassicPark_poster.jpg" height="300" width="200" style="margin-left:20px;">
+      <div style="padding-top:10px;padding-left:60px;">
+        <button data-html="true" type="button" class="btn btn-info" data-toggle="popover" name="Juarassic Park" value="300" title="<h4><b>Details</b></h4>" data-content="<em>Summary: A joyride at a wildlife amusement park, which contains cloned dinosaurs, soon becomes a horrifying experience when a power breakdown afflicts the park and the dinosaurs begin to react violently.</em><br /><em>Price</em>: Rs 300">Juarassic Park</button>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <img class="img-thumbnail" src="action/MatrixRevolution_poster.jpg" height="300" width="200">
+      <div style="padding-top:10px;padding-left:60px;">
+        <button type="button" data-html="true" class="btn btn-info" name="Matrix Revolution" value="300" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary: Neo, humanity's only hope of stopping the war and saving Zion, attempts to broker peace between the machines and humans. However, he must first confront his arch nemesis, the rogue agent Smith</em>: <br /><em>Price</em>: Rs 300">Matrix Revolution</button></div>
+      </div>
+
+  <div class="col-md-4">
+    <img class="img-thumbnail" src="action/TheMatrix_poster.jpg" height="50" width="200">
+    <div style="padding-top:10px;padding-left:60px;">
+      <button data-html="true" type="button" class="btn btn-info" name="The Matrix" value="300" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: Thomas, a computer programmer, is led to fight an underground war against powerful computers who now rule the world with a system called 'The Matrix'.<br /><em>Price</em>: Rs 300">The Matrix</button>
+    </div>
+  </div>
+
+  </div>
+  
+  </div>  
+
+    <div id="animated" class="tab-pane fade">    
+    
+      <div class="row">
+  
+    <div class="col-md-4 "><img class="img-thumbnail" src="animated/BossBaby_poster.jpg" height="300" width="200" style="margin-left:20px;"><div style="padding-top:10px;padding-left:60px;"><button  name="The Boss Baby" value="300" data-html="true" type="button" class="btn btn-info" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: A new baby's arrival impacts a family, told from the point of view of a delightfully unreliable narrator -- a wildly imaginative 7-year-old named Tim. The most unusual Boss Baby (Alec Baldwin) arrives at Tim's home in a taxi, wearing a suit and carrying a briefcase. The instant sibling rivalry must soon be put aside when Tim discovers that Boss Baby is actually a spy on a secret mission, and only he can help thwart a dastardly plot that involves an epic battle between puppies and babies.<br /><em>Price</em>: Rs 300">The Boss Baby</button></div></div>
+  
+    <div class="col-md-4"><img class="img-thumbnail" src="animated/DespicableMe2_poster.jpg"  height="300" width="200"><div style="padding-top:10px;padding-left:60px;"><button data-html="true" type="button" class="btn btn-info" name="Despicable Me 2" value="300" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: When a new criminal comes to town, the Anti-Villain League decides to hire Gru in order to fight him off. While Gru initially refuses, he eventually agrees after his aide goes back to his evil ways<br /><em>Price</em>: Rs 300">Despicable Me 2</button></div></div>
+  
+  <div class="col-md-4"><img class="img-thumbnail" src="animated/KungFuPanda2_poster.jpg" height="300" width="200"><div style="padding-top:10px;padding-left:60px;"><button data-html="true" type="button" name="Kung Fu Panda 2" value="300" class="btn btn-info" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: Dragon Warrior Po takes it upon himself to foil the plans of murderous peacock Shen who intends to conquer China and destroy kung fu. For this, Po has to unveil the mystery of his own past.<br /><em>Price</em>: Rs 300">Kung Fu Panda 2</button></div></div>
+  
+  </div>
+  <br />
+  <br />
+  
+  <div class="row">
+  
+    <div class="col-md-4 "><img class="img-thumbnail" src="animated/KungFuPanda_poster.jpg" height="300" width="200" style="margin-left:20px;"><div style="padding-top:10px;padding-left:60px;"><button data-html="true" name="Kung Fu Panda" value="300" type="button" class="btn btn-info" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: When an obese Po the Panda, a kung fu enthusiast, gets selected as the Dragon Warrior, he decides to team up with the Furious Five and destroy the evil forces that threaten the Valley of Peace<br /><em>Price</em>: Rs 300">Kung Fu Panda</button></div></div>
+  
+    <div class="col-md-4"><img class="img-thumbnail" src="animated/DespicableMe_poster.jpg" height="300" width="200"><div style="padding-top:10px;padding-left:60px;"><button type="button" data-html="true" class="btn btn-info" name="Despicable Me" value="300" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: Gru, a criminal mastermind, adopts three orphans as pawns to carry out the biggest heist in history. His life takes an unexpected turn when the little girls see the evildoer as their potential father.<br /><em>Price</em>: Rs 300">Despicable Me</button></div></div>
+  
+  <div class="col-md-4"><img class="img-thumbnail" src="animated/LionKing.jpeg" height="300" width="200"><div style="padding-top:10px;padding-left:60px;"><button data-html="true" type="button" class="btn btn-info" name="Lion King" value="300" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: Lion cub and future king Simba searches for his identity. His eagerness to please others and penchant for testing his boundaries sometimes gets him into trouble<br /><em>Price</em>: Rs 300">Lion King</button></div></div>
+  
+  </div>
+
+    </div>
+
+    <div id="biography" class="tab-pane fade">    
+    
+      <div class="row">
+  
+    <div class="col-md-4 "><img class="img-thumbnail" src="Biography/ABeautifulMind_poster.jpg" height="300" width="200" style="margin-left:20px;"><div style="padding-top:10px;padding-left:60px;"><button name="A Beautiful Mind" value="300" data-html="true" type="button" class="btn btn-info" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: John Nash, a brilliant but asocial mathematical genius, finds himself in pain when he encounters a cruel disorder. He ultimately overcomes his struggles and emerges free of any trauma.<br /><em>Price</em>: Rs 300">A Beautiful Mind</button></div></div>
+  
+    <div class="col-md-4"><img class="img-thumbnail" src="Biography/CatchMeIfYouCan_poster.jpg" height="300" width="200"><div style="padding-top:10px;padding-left:60px;"><button type="button" data-html="true" name="Catch Me If You Can" value="300" class="btn btn-info" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: The story of Frank Abagnale Jr., before his 19th birthday, successfully forged millions of dollars' worth of checks while posing as a Pan Am pilot, a doctor, and legal prosecutor as a seasoned and dedicated FBI agent pursues him.<br /><em>Price</em> :Rs 300">Catch Me If You Can</button></div></div>
+  
+  <div class="col-md-4"><img class="img-thumbnail" src="Biography/Chaplin_poster.jpeg" height="300" width="200"><div style="padding-top:10px;padding-left:60px;"><button type="button" data-html="true" class="btn btn-info" name="Chaplin" value="300" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: An aged Charlie Chaplin narrates his life to his autobiography's editor, including his rise to wealth and comedic fame from poverty, his turbulent personal life and his run-ins with the FBI.<br /><em>Price</em>: Rs 300">Chaplin</button></div></div>
+  
+  </div>
+  <br />
+  <br />
+  
+  <div class="row">
+  
+    <div class="col-md-4 "><img class="img-thumbnail" src="Biography/Jobs_poster.jpg" height="300" width="200" style="margin-left:20px;"><div style="padding-top:10px;padding-left:60px;"><button data-html="true" type="button" name="Jobs" value="300" class="btn btn-info" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: After revolutionizing the home computers, Steve Jobs and his friend Steve Wozniak co-found Apple Inc. But as a leader and a visionary, Jobs' rocky tenure leads to his ouster from the company.<br /><em>Price</em>: Rs 300">Jobs</button></div></div>
+  
+    <div class="col-md-4"><img class="img-thumbnail" src="Biography/TheImitationGame_poster.jpeg" height="300" width="200"><div style="padding-top:10px;padding-left:60px;"><button type="button" data-html="true" name="The Imitation Game" value="300" class="btn btn-info" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: British mathematician Alan Turing builds a machine that is a prototype of the modern computer to decipher German codes. However, when the police learn about it, they arrest him.<br /><em>Price</em>: Rs 300">The Imitation Game</button></div></div>
+
+  <div class="col-md-4"><img class="img-thumbnail" src="Biography/ThePursuitofHappyness_poster.jpg" height="300" width="200"><div style="padding-top:10px;padding-left:60px;"><button data-html="true" type="button" class="btn btn-info" name="The Pursuit of Happyness" value="300" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: Chris Gardner takes up an unpaid internship in a brokerage firm after he loses his life's earnings selling a product he invested in. His wife leaves him and he is left with the custody of his son.<br /><em>Price</em>: Rs 300">The Pursuit of Happyness</button></div></div>
+  </div>
+
+    </div>  
+
+    <div id="comedy" class="tab-pane fade">    
+    
+    <div class="row">
+    
+    <div class="col-md-4 "><img class="img-thumbnail" src="comedy/airplane_poster.jpg" height="300" width="200" style="margin-left:20px;"><div style="padding-top:10px;padding-left:60px;"><button data-html="true" name="Airplane" value="300" type="button" class="btn btn-info" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: A man afraid to fly must ensure that a plane lands safely after the pilots become sick.<em><br />Price</em>: Rs 300">Airplane</button></div></div>
+
+    <div class="col-md-4"><img class="img-thumbnail" src="comedy/BeanHoliday_poster.jpg" height="300" width="200"><div style="padding-top:10px;padding-left:60px;"><button type="button" name="Mr. Beans Holiday" value="300" class="btn btn-info" data-html="true" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: Mr. Bean wins a trip to Cannes where he unwittingly separates a young boy from his father and must help the two come back together. On the way he discovers France, bicycling, and true love, among other things.<br /><em>Price</em> :Rs 300">Mr. Bean's Holiday</button></div></div>
+  
+  <div class="col-md-4"><img class="img-thumbnail" src="comedy/Hangover_poster.jpg" height="300" width="200"><div style="padding-top:10px;padding-left:60px;"><button data-html="true" type="button" name="The Hangover" value="300" class="btn btn-info" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: For a bachelor party, three best men and the groom take a road trip to Las Vegas. They wake up the next morning to realise that not only have they lost the groom but also have no recollection.<br /><em>Price</em>:Rs 300">The Hangover</button></div></div>
+  
+  </div>
+  <br />
+  <br />
+
+  <div class="row">
+  
+    <div class="col-md-4 "><img class="img-thumbnail" src="comedy/HomeAlone_poster.jpg" height="300" width="200" style="margin-left:20px;"><div style="padding-top:10px;padding-left:60px;"><button data-html="true" name="Home Alone" value="300" type="button" class="btn btn-info" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: Eight-year-old Kevin is accidentally left behind when his family leaves for France. At first, he's happy to be in charge; but when thieves try to break into his home, he puts up a fight like no other.<br /><em>Price</em>: Rs 300">Home Alone</button></div></div>
+
+    <div class="col-md-4"><img class="img-thumbnail" src="comedy/PetDetective_poster.jpg" height="300" width="200"><div style="padding-top:10px;padding-left:60px;"><button data-html="true" type="button" class="btn btn-info" name="Ace Ventura: Pet Detective" value="300" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: Ace Ventura, a private detective, specialises in finding lost animals. When Snowflake, a football team's aquatic mascot, goes missing, he is called to investigate.<br /><em>Price</em>: Rs 300">Ace Ventura: Pet Detective</button></div></div>
+
+  <div class="col-md-4"><img class="img-thumbnail" src="comedy/WhenHarryMetSally_poster.jpg" height="300" width="200"><div style="padding-top:10px;padding-left:60px;"><button data-html="true" type="button" name="When Harry Met Sally" value="300" class="btn btn-info" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: A chance encounter between two graduates culminates in a short-term friendship. But when fate brings them back together five years later, they are forced to deal with how they feel about each other.<br /><em>Price</em>: Rs 300">When Harry Met Sally</button></div></div>
+  
+  </div> 
+
+  </div>
+  <div id="horror" class="tab-pane fade">
+
+    <div class="row">
+    
+    <div class="col-md-4 "><img class="img-thumbnail" src="horror/Anabelle_poster.jpg" height="300" width="200" style="margin-left:20px;"><div style="padding-top:10px;padding-left:60px;"><button data-html="true" type="button" name="Annabelle" value="300" class="btn btn-info" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: A couple begins to experience terrifying supernatural occurrences involving a vintage doll shortly after their home is invaded by satanic cultists.<br /><em>Price</em>: Rs 300">Annabelle</button></div></div>
+    
+    <div class="col-md-4"><img class="img-thumbnail" src="horror/AnabelleCreation_poster.jpg" height="500" width="350"><div style="padding-top:10px;padding-left:60px;"><button data-html="true" type="button" class="btn btn-info" name="Annabelle Creation" value="300" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: 12 years after the tragic death of their little girl, a dollmaker and his wife welcome a nun and several girls from a shuttered orphanage into their home, where they soon become the target of the dollmaker's possessed creation, Annabelle.<br /><em>Price</em>: Rs 300">Annabelle Creation</button></div></div>
+  
+  <div class="col-md-4"><img class="img-thumbnail" src="horror/IT_poster.jpeg" height="300" width="200"><div style="padding-top:10px;padding-left:60px;"><button data-html="true" type="button" name="IT" value="300" class="btn btn-info" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: A group of bullied kids band together when a shapeshifting demon, taking the appearance of a clown, begins hunting children.<br /><em>Price</em>: Rs 300">IT</button></div></div>
+  
+  </div>
+  <br />
+  <br />
+  
+  <div class="row">
+    <div class="col-md-4 "><img class="img-thumbnail" src="horror/TheConjuring_poster.jpeg" height="300" width="200" style="margin-left:20px;"><div style="padding-top:10px;padding-left:60px;"><button name="The Conjuring" value="300" data-html="true" type="button" class="btn btn-info" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: Rod and Carolyn find their pet dog dead under mysterious circumstances and experience a spirit that harms their daughter Andrea. They finally call investigators who can help them get out of the mess.<br /><em>Price</em>: Rs 300">The Conjuring</button></div></div>
+  
+    <div class="col-md-4"><img class="img-thumbnail" src="horror/TheExorcist_poster.jpg" height="300" width="200"><div style="padding-top:10px;padding-left:60px;"><button type="button" name="The Exorcist" value="300" class="btn btn-info" data-html="true" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: An actress notices dangerous changes in the behavior and physical make-up of her 12-year-old daughter. Meanwhile, a young priest begins to doubt his faith while dealing with his mother's sickness.<br /><em>Price</em>: Rs 300">The Exorcist</button></div></div>
+  
+  <div class="col-md-4"><img class="img-thumbnail" src="horror/TheShining_poster.jpg" height="300" width="200"><div style="padding-top:10px;padding-left:60px;"><button data-html="true" name="The Shining" value="300" type="button" class="btn btn-info" data-toggle="popover" title="<h4><b>Details</b></h4>" data-content="<em>Summary</em>: Jack and his family move into an isolated hotel with a violent past. Living in isolation, Jack begins to lose his sanity, which affects his family members<br /><em>Price</em>: Rs 300">The Shining</button></div></div>
+  
+  </div>
+  </div>
+</div>
+
+  <div id="cart_modal" class="modal fade" role="dialog" >  
+    <div class="modal-dialog modal-lg">  
+      <div class="modal-content">  
+        <div class="modal-header">  
+          <button type="button" class="close" data-dismiss="modal" id="btn1">×</button>  
+          <h3 class="modal-title" style="text-align:center;background-color: lightblue;"><b><i>Shopping Cart</i></b></h3>  
+        </div>  
+        <div class="modal-body">  
+            <table style="flex-direction: row-reverse;" class="table table-striped table-bordered" id="cart_table">
+            <tr>
+              <th style="text-align:center;">Movie Name</th>
+              <th style="text-align:center;">Price</th>
+            </tr>
+          <tr>
+            <td style="text-align:center;" id="footer_total"></td>
+            <td style="text-align:center;" id="footer_value"></td>
+          </tr>
+          </table>
+          <p id="total" class="pull-right"></p>
+        </div>  
+        <div class="modal-footer">  
+          <button type="button" class="btn btn-default" data-dismiss="#" id="btn2">Checkout</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal" id="btn3">Close</button>  
+        </div>  
+      </div>  
+    </div>  
+  </div>    
+
+    <div class="modal fade" id="addcategory" role="dialog">  
+    <div class="modal-dialog modal-lg">  
+      <div class="modal-content">  
+        <div class="modal-header">  
+          <button id="btn4" type="button" class="close" data-dismiss="modal">×</button>  
+          <h3 class="modal-title" style="text-align: center;background-color: lightblue;">Add New Category</h3>  
+        </div>  
+        <div class="modal-body">  
+          <div class="container">
+          <form action='addcategory.js' style="width:300px">
+            <div class="form-group">
+            <span style="font-size: 18px;""><b>Category Name<b></span>:<input class="form-control" type="text"  name="category_name" id="newCategory"><br/>
+          </div>
+          </form>
+          </div>  
+        </div>  
+        <div class="modal-footer">  
+          <!--<button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-plus"></span></button>-->
+          <button type="button" onclick="submitCategory()" class="btn btn-default" id="btn5" data-dismiss="#">Submit</button>  
+          <button type="button" class="btn btn-default" id="btn6" data-dismiss="modal">Close</button>
+        </div>  
+      </div>  
+    </div>  
+  </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      // JavaScript goes here
+      var total = 0;
+      var temp = 10;
+      var row_lvl = 1;
+      $(document).ready(function(){
+      $('[data-toggle="popover"]').popover({
+        placement:'right',
+        trigger :'hover',
+    });   
+    });
+
+      function additems()
+              { 
+                
+                var data_table = document.getElementById('cart_table');
+                var row = data_table.insertRow(row_lvl);
+               
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                cell1.innerHTML = this.name;
+                cell2.innerHTML = this.value;
+                cell1.style.textAlign="center";
+                cell2.style.textAlign="center";
+                var sum_display = document.getElementById('total');
+                total = total + Number(this.value);
+                document.getElementById('footer_total').innerHTML='Total';
+                document.getElementById('footer_value').innerHTML=total;
+                //var sumTotal = '<b>Total</b>' +'--'+ total.toString();
+                //sum_display.innerHTML = sumTotal;
+                row_lvl++;
+              }
+        function changeColor()
+        {
+        	this.style.backgroundColor="purple";
+        }
+        function restoreColor()
+        {
+        	this.style.backgroundColor="blue";
+        }
+
+      var buttons = document.querySelectorAll('button');
+      for (var i = 0; i < buttons.length ; i++) {
+        if(!(buttons[i].id=='btn1'||buttons[i].id=='btn2'||buttons[i].id=='btn3'||buttons[i].id=='btn4'||buttons[i].id=='btn5'||buttons[i].id=='btn6'))
+        {
+   			   buttons[i].style.backgroundColor="blue";
+   			   buttons[i].addEventListener('click', additems);
+   			   buttons[i].addEventListener('mouseover',changeColor);
+   			   buttons[i].addEventListener('mouseout',restoreColor);
+  		}
+    }
+
+    function submitCategory(){
+      var new_cat = document.getElementById("newCategory");
+      $('#category_list').append("<li><a data-toggle='tab' href='#new_page'"+temp+">"+new_cat.value+"</a></li>");
+      $('#add_movies').append("<div id='new_page'"+temp+"class='tab-pane fade'>"+"<div class='row'><div class='col-md-4 '><img class='img-thumbnail' src='default.jpg' height='300' width='200'><div style='padding-top:10px;padding-left:60px;'><button name='Lorum Ipsum' value='300' data-html='true' type='button' class='btn btn-info' data-toggle='popover' title='<h4><b>Details</b></h4>' data-content='<em>Summary</em>: Some random movie info provided here<br /><em>Price</em>: Rs 300'>Lorum Ipsum</button></div></div><div class='col-md-4'><img class='img-thumbnail' src='default.jpg' height='300' width='200'><div style='padding-top:10px;padding-left:60px;'><button name='Lorum Ipsum' value='300' data-html='true' type='button' class='btn btn-info' data-toggle='popover' title='<h4><b>Details</b></h4>' data-content='<em>Summary</em>: Some random movie info provided here<br /><em>Price</em>: Rs 300'>Lorum Ipsum</button></div></div><div class='col-md-4 '><img class='img-thumbnail' src='default.jpg' height='300' width='200'><div style='padding-top:10px;padding-left:60px;'><button name='Lorum Ipsum' value='300' data-html='true' type='button' class='btn btn-info' data-toggle='popover' title='<h4><b>Details</b></h4>' data-content='<em>Summary</em>: Some random movie info provided here<br /><em>Price</em>: Rs 300'>Lorum Ipsum</button></div></div></div><br /><br /><div class='row'><div class='col-md-4 '><img class='img-thumbnail' src='default.jpg' height='300' width='200'><div style='padding-top:10px;padding-left:60px;'><button name='Lorum Ipsum' value='300' data-html='true' type='button' class='btn btn-info' data-toggle='popover' title='<h4><b>Details</b></h4>' data-content='<em>Summary</em>: Some random movie info provided here<br /><em>Price</em>: Rs 300'>Lorum Ipsum</button></div></div><div class='col-md-4'><img class='img-thumbnail' src='default.jpg' height='300' width='200'><div style='padding-top:10px;padding-left:60px;'><button name='Lorum Ipsum' value='300' data-html='true' type='button' class='btn btn-info' data-toggle='popover' title='<h4><b>Details</b></h4>' data-content='<em>Summary</em>: Some random movie info provided here<br /><em>Price</em>: Rs 300'>Lorum Ipsum</button></div></div><div class='col-md-4 '><img class='img-thumbnail' src='default.jpg' height='300' width='200'><div style='padding-top:10px;padding-left:60px;'><button name='Lorum Ipsum' value='300' data-html='true' type='button' class='btn btn-info' data-toggle='popover' title='<h4><b>Details</b></h4>' data-content='<em>Summary</em>: Some random movie info provided here<br /><em>Price</em>: Rs 300'>Lorum Ipsum</button></div></div></div><br/><br/><div class='row'><div class='col-md-4 '><img class='img-thumbnail' src='default.jpg' height='300' width='200'><div style='padding-top:10px;padding-left:60px;'><button name='Lorum Ipsum' value='300' data-html='true' type='button' class='btn btn-info' data-toggle='popover' title='<h4><b>Details</b></h4>' data-content='<em>Summary</em>: Some random movie info provided here<br /><em>Price</em>: Rs 300'>Lorum Ipsum</button></div></div><div class='col-md-4 '><img class='img-thumbnail' src='default.jpg' height='300' width='200'><div style='padding-top:10px;padding-left:60px;'><button name='Lorum Ipsum' value='300' data-html='true' type='button' class='btn btn-info' data-toggle='popover' title='<h4><b>Details</b></h4>' data-content='<em>Summary</em>: Some random movie info provided here<br /><em>Price</em>: Rs 300'>Lorum Ipsum</button></div></div><div class='col-md-4 '><img class='img-thumbnail' src='default.jpg' height='300' width='200'><div style='padding-top:10px;padding-left:60px;'><button name='Lorum Ipsum' value='300' data-html='true' type='button' class='btn btn-info' data-toggle='popover' title='<h4><b>Details</b></h4>' data-content='<em>Summary</em>: Some random movie info provided here<br /><em>Price</em>: Rs 300'>Lorum Ipsum</button></div></div></div>"+"</div>");
+      temp++;
+    }
+
+    </script>
+  </body>
+
+</html>
